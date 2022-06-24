@@ -17,6 +17,7 @@ public class SideBarPage extends BaseTest {
     WebElement uploadAndDownload;
     WebElement dynamicProperties;
 
+     //napravila sam metode za sve sidebar elemente napravila  i getere da bih olaksala sebi tokom testiranja
     public WebElement getTextBox() {
         return driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[1]/div/ul/li[1]/span"));
     }

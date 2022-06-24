@@ -14,7 +14,10 @@ import org.testng.annotations.BeforeClass;
 import java.io.IOException;
 import java.time.Duration;
 
-
+//U ovom ispod delu deklarisem driver, webdriverwait ako bude potrebe i sve stranice koje cu da testiram
+// public WebDriver driver;
+//  public WebDriverWait wdwait;
+//  public ExcelReader excelReader;
 
 public class BaseTest {
 
@@ -63,8 +66,8 @@ public class BaseTest {
 
     @AfterClass
     public void tearDown(){
-        //driver.quit();
-        //driver.close();
+        driver.quit();
+        driver.close();
     }
 }
 // Tokom testiranja koristim IntelliJ Idea u kome kreiram Maven projekat iz razloga sto mi je lakse da ubacujem biblioteke preko pom fajla
@@ -77,7 +80,3 @@ public class BaseTest {
 //Ako bude potrebe da se testira i na drugim browserima samo treba zameniti driver i ubaciti u directory. Na primer gecko driver za Firefox.
 
 
-    //U ovom ispod delu deklarisem driver, webdriverwait ako bude potrebe i sve stranice koje cu da testiram
-   // public WebDriver driver;
-  //  public WebDriverWait wdwait;
-  //  public ExcelReader excelReader;
